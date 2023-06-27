@@ -1,23 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
  * main - entry point
- * Return: always o
+ * Return: 0
  */
 
 int main(void)
 {
-	int d;
+	int num;
 
-	for (d = '0'; d <= '9'; d++)
+	for (num = '0'; num <= '9'; num++;)
 	{
-		putchar(d);
-		if (d != '9')
+		putchar(num);
+		if (num == '9')
+		{
+			break;
+		}
+		else
 		{
 			putchar(',');
-			putchar(' ')
+			putchar(' ');
 		}
 	}
 	putchar('\n');
