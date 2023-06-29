@@ -2,20 +2,25 @@
 
 /**
  * print_number - prints an integer
+ * _putchar - writes the character 
  * @n: integer
  * Return: void
  */
 
 void print_number(int n)
 {
-	unsigned int nun = n;
+	unsigned int n1;
+
+	n1 = n;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		nun = -nun;
+		n1 = -n;
 	}
-	if ((nun / 10) > 0)
-		print_number(nun / 10);
-	_putchar((nun % 10) + '0');
+	if (n1 / 10 != 0)
+	{
+		print_number(n1 / 10);
+	}
+	_putchar((n1 % 10) + '0');
 }
