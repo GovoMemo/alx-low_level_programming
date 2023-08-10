@@ -1,9 +1,8 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * string_concat - a function that concatenates two strings
+ * string_nconcat - a function that concatenates two strings
  * @s1: first string to concatenate
  * @s2: second string
  * @n: number of bytes
